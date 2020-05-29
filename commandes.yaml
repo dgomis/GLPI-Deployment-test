@@ -1,0 +1,48 @@
+mise_a_jour: "apt -y update && apt -y upgrade"
+
+install_apache2: "apt install -y apache2"
+
+enable_apache2: "systemctl enable apache2"
+
+start_apache2: "systemctl start apache2"
+
+install_php7: "apt install -y php7.3 php7.3-curl php7.3-gd php7.3-intl php-pear php-imagick php7.3-imap 
+               php-memcache php7.3-pspell php7.3-recode php7.3-tidy php7.3-xmlrpc php7.3-xsl php7.3-mbstring 
+               php-gettext php7.3-ldap php-cas php-apcu libapache2-mod-php7.3 php7.3-mysql"
+
+install_mariadb: "apt install -y mariadb-server"
+
+db_user: "glpiuser"
+
+db_host: "localhost"
+
+db_userPwd: "P@$$w0rdEd10"
+
+db_name: "glpibd"
+
+cmd_console: "php bin/console db:install -d glpibd -u glpiuser -p P@$$w0rdEd10 -L fr_FR"
+
+url_glpi: "https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz"
+
+dossier_glpi: "/home/dacky/Téléchargements/glpi-9.4.5.tgz"
+
+glpi_extr: "/home/dacky/Téléchargements/"
+
+glpi_mov: "/home/dacky/Téléchargements/glpi", "/var/www/html/"
+
+chown_glpi: "chown –R www-data /var/www/html/glpi/"
+
+rep_console: "/var/www/html/glpi/"
+
+url_fusinv: "https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz"
+
+dossier_fusinv: "/home/dacky/Téléchargements/glpi9.4+2.4.tar.gz"
+
+fusinv_extr: "/var/www/html/glpi/plugins"
+
+fusinv_mov: "/var/www/html/glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/", "/fusioninventory/"
+
+chown_plugins: "chown -R www-data /var/www/html/glpi/plugins"
+
+
+
