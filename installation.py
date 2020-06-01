@@ -62,8 +62,8 @@ print("Localisation des entêtes, headers")
 # Décompression de glpi
 print("***Début de décompression de glpi***")
 try:
-	my_tar1 = tarfile.open(data["dossier_glpi"])
-	my_tar1.extractall(data["glpi_extr"])
+	my_tar1 = tarfile.open(data["working_folder"]+data["glpi_archive"])
+	my_tar1.extractall(data["working_folder"])
 except:
 	print("Erreur décompression glpi")
 else:
@@ -73,27 +73,19 @@ my_tar1.close()
 # Déplacement de glpi dans le répertoire /html
 print("***Début de déplacement de glpi dans le répertoire /html***")
 try:
-	shutil.move(data["glpi_mov"])
+	shutil.move(data["working_folder"]+data["glpi_folder"], data["webroot"])
 except:
 	print("Erreur déplacement glpi")
 else:
 	print("GLPI déplacé")
 print("Fin décompression de glpi")
 
-# Droits LAMP sur les fichiers glpi
-print("***Début attribution des droits au serveur LAMP sur les fichiers de glpi***")
-try:
-	os.system(data["chown_glpi"])
-except:
-	print("Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi")
-else:
-	print("Droits attribués au serveur LAMP pour agir sur les fichiers de glpi")
 
 # On crée la base de donnée et le compte dans la console
 print("***Début de création de la base de donnée et du compte dans la console***")
 try:
-	os.chdir(data["rep_console"])
-	os.system(data["cmd_console"])
+	os.chdir(data["webroot"]+data["glpi_folder"])
+	os.system("php bin/console db:install -d "+data["db_name"]+" -u "+data["db_user"]+" -p "+data["db_userPwd"]+" -L fr_FR")
 except:
 	print("Erreur de création du compte et de la base de donnée dans la console")
 else:
@@ -103,7 +95,7 @@ else:
 print("***Début téléchargement fusioninventory!***")
 try:
 	url = (data["url_fusinv"])
-	filename, headers = urllib.request.urlretrieve(url, filename=data["dossier_fusinv"])
+	filename, headers = urllib.request.urlretrieve(url, filename=data["working_folder"]+data["fusinv_archive"])
 except:
 	print("Erreur téléchargement fusioninventory")
 else:
@@ -114,8 +106,8 @@ print("Localisation des entêtes: ", headers)
 # Décompression de fusioninventory
 print("***Début décompression fusioninventory***")
 try:
-	my_tar2 = tarfile.open(data["dossier_fusinv"])
-	my_tar2.extractall(data["fusinv_extr"])
+	my_tar2 = tarfile.open(data["working_folder"]+data["fusinv_archive"])
+	my_tar2.extractall(data["working_folder"])
 except:
 	print("erreur décompression fusioninventory")
 else:
@@ -125,20 +117,20 @@ my_tar2.close()
 # Déplacement de fionsioninventory dans le répertoire /fusioninventory
 print("***Début déplacement de fusioninventory dans le répertoire /fusioninventory***")
 try:
-	shutil.move(data["fusinv_mov"])
+	shutil.move(data["working_folder"]+data["fusinv_folder"], data["webroot"]+data["fusinv_working_folder"])
 except:
 	print("Erreur déplacement fusioninventory")
 else:
 	print("fusioninventory déplacé")
 
-# Attribution des droits d'accès au serveur web sur les plugins
-print("***Début d'attribution des droits d'accès au serveur web sur les plugins***")
+# Droits LAMP sur les fichiers glpi
+print("***Début attribution des droits au serveur LAMP sur les fichiers de glpi***")
 try:
-	os.system(data["chown_plugins"])
+	os.system("chown –R www-data "+ data["webroot"]+data["glpi_folder"])
 except:
-	print("Erreur d'attribution des droits d'accès au serveur web sur les plugins")
+	print("Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi")
 else:
-	print("Droits d'accès attribués au serveur web sur les plugins")
+	print("Droits attribués au serveur LAMP pour agir sur les fichiers de glpi")
 	
 glpi.close()
 print("***INSTALLATION GLPI TERMINEE...!!!***")
