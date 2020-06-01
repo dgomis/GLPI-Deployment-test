@@ -20,29 +20,24 @@ db_userPwd: "P@$$w0rdEd10"
 
 db_name: "glpibd"
 
-cmd_console: "php bin/console db:install -d glpibd -u glpiuser -p P@$$w0rdEd10 -L fr_FR"
+webroot: "/var/www/html/"
+
+glpi_folder: "glpi"
+
+working_folder: "/home/dacky/Téléchargements/"
 
 url_glpi: "https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz"
 
-dossier_glpi: "/home/dacky/Téléchargements/glpi-9.4.5.tgz"
-
-glpi_extr: "/home/dacky/Téléchargements/"
-
-glpi_mov: "/home/dacky/Téléchargements/glpi", "/var/www/html/"
-
-chown_glpi: "chown –R www-data /var/www/html/glpi/"
-
-rep_console: "/var/www/html/glpi/"
+glpi_archive: "glpi-9.4.5.tgz"
 
 url_fusinv: "https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz"
 
-dossier_fusinv: "/home/dacky/Téléchargements/glpi9.4+2.4.tar.gz"
+fusinv_archive: "glpi9.4+2.4.tar.gz"
 
-fusinv_extr: "/var/www/html/glpi/plugins"
+fusinv_folder: "glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/"
 
-fusinv_mov: "/var/www/html/glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/", "/fusioninventory/"
+fusinv_working_folder: "glpi/plugins/fusioninventory/"
 
-chown_plugins: "chown -R www-data /var/www/html/glpi/plugins"
 
 
 
