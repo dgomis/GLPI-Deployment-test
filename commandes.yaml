@@ -12,6 +12,8 @@ install_php7: "apt install -y php7.3 php7.3-curl php7.3-gd php7.3-intl php-pear 
 
 install_mariadb: "apt install -y mariadb-server"
 
+compte: "php bin/console db:install -d glpibd -u glpiuser -p P@$$w0rdEd10 -L fr_FR"
+
 db_user: "glpiuser"
 
 db_host: "localhost"
@@ -37,7 +39,3 @@ fusinv_archive: "glpi9.4+2.4.tar.gz"
 fusinv_folder: "glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/"
 
 fusinv_working_folder: "glpi/plugins/fusioninventory/"
-
-
-
-
