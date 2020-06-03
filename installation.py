@@ -126,7 +126,7 @@ else:
 # Droits LAMP sur les fichiers glpi
 print("***Début attribution des droits au serveur LAMP sur les fichiers de glpi***")
 try:
-	os.system("chown –R www-data "+ data["webroot"]+data["glpi_folder"])
+	os.system("chown –R www-data "+data["webroot"]+data["glpi_folder"])
 except:
 	print("Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi")
 else:
