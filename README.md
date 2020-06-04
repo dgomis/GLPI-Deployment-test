@@ -201,8 +201,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - FusionInventory:
 	https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz
 
-- git:
-	https://git-scm.com/download/win
+- Pour télécharger git, cliquez ['ICI'](https://git-scm.com/download/win)
 	
 - github:
 	https://github.com/
