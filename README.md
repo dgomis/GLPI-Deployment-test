@@ -15,24 +15,24 @@ le suivi des licences et l'audit des logiciels.
 
 Caractéristiques de GLPI:
 
-    Inventaire des ordinateurs, des périphériques, des imprimantes réseau et de tous les 
+    (c)Inventaire des ordinateurs, des périphériques, des imprimantes réseau et de tous les 
 	composants associés via une interface, avec des outils d'inventaire tels que: FusionInventory ou OCS Inventory
      
-	Gestion de l'infrastructure du centre de données (DCIM)
+	(c)Gestion de l'infrastructure du centre de données (DCIM)
      
-	Gestion du cycle de vie des articles
+	(c)Gestion du cycle de vie des articles
      
-	Gestion des licences (conforme ITIL)
+	(c)Gestion des licences (conforme ITIL)
      
-	Gestion de la garantie et des informations financières (bon de commande, garantie et extension, amortissement)
+	(c)Gestion de la garantie et des informations financières (bon de commande, garantie et extension, amortissement)
      
-	Gestion des contrats, contacts, documents liés aux articles en stock
+	(c)Gestion des contrats, contacts, documents liés aux articles en stock
      
-	Gestion des incidents, demandes, problèmes et changements
+	(c)Gestion des incidents, demandes, problèmes et changements
      
-	Base de connaissances et foire aux questions (FAQ)
+	(c)Base de connaissances et foire aux questions (FAQ)
      
-	Réservation d'actifs
+	(c)Réservation d'actifs
 
 De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalités supplémentaires.
 
