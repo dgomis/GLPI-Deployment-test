@@ -44,7 +44,7 @@ Toutes les anciennes versions seront stockées dans votre repository afin que vo
 De plus, pour chaque utilisateur au travail, une version différente du projet sera créée afin de ne pas créer de superpositions 
 ou d'écrasements gênants.
 
-				COMMENT UTILISER GITHUB?
+## COMMENT UTILISER GITHUB?
 
 	CRÉER UN REPOSITORY
 
@@ -80,8 +80,7 @@ Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dan
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
 
-
-	APPORTER DES MODIFICATIONS (commit)
+** APPORTER DES MODIFICATIONS (commit)
 
 Sur Github, les modifications enregistrées sont appelées commit. Chaque validation a un message de validation, 
 qui est une description expliquant pourquoi une modification particulière a été apportée. 
@@ -94,8 +93,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications
 
-
-	OUVRIR UN PULL REQUEST (extractions)
+* OUVRIR UN PULL REQUEST (extractions)
 
 L’onglet Pull requests permet de réaliser des demandes de pull. Les demandes de pull (extractions) vous permettent 
 d'informer les autres sur les modifications que vous avez appliquées à une branche d'un référentiel sur GitHub. 
@@ -119,9 +117,6 @@ branches dans la branche de production principale.
 
 ## GLPI
 
-				LOGO GLPI
-
-
 	À PROPOS DE GLPI
 
 GLPI (gestionnaire libre de parc informatique) est un logiciel qui, comme son nom l’indique, 
@@ -139,7 +134,7 @@ Là encore, l’application se charge de gérer le téléchargement des fichiers
 Le projet GLPI a été réalisé par l’association Indepnet. 
 Ce logiciel est open-source, ce qui permet d’exécuter, modifier ou développer le code.
 
-	CARACTÉRISTIQUES DE GLPI:
+## CARACTÉRISTIQUES DE GLPI:
 
 - Inventaire des ordinateurs, des périphériques, des imprimantes réseau et de tous les composants 
 associés via une interface, avec des outils d'inventaire tels que: FusionInventory ou OCS Inventory    
@@ -154,8 +149,6 @@ associés via une interface, avec des outils d'inventaire tels que: FusionInvent
 
 De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalités supplémentaires.
 
----
-
 ## LES VERSIONS REQUISES POUR L'INSTALLATION DE GLPI
 
 	GLPI est une application web qui nécessite :
@@ -163,8 +156,6 @@ De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalit�
 - Pour le serveur web (Apache/2.4.38);
 - Le serveur web devra supporter PHP (version: PHP 7.3.14-1);
 - Pour la base de données (MariaDB --> version: 10.3.22-MariaDB).
-
----
 
 ## EXTENSIONS PHP OBLIGATOIRES:
 
@@ -180,8 +171,6 @@ Les extensions PHP suivantes sont requises pour que l’application fonctionne c
 - zlib: pour activer les fonctionnalités de sauvegarde et de restauration ;
 - simplexml;
 - xml.
-
----
 
 ## EXTENSIONS PHP OPTIONNELLES
 
