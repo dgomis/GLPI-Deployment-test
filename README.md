@@ -11,8 +11,6 @@ d’administration et de partager notre code avec la communauté sur notre répe
 
 ---
 
-## GIT
-
 ![git](https://user-images.githubusercontent.com/65951138/83818858-a5969280-a6c8-11ea-8679-694808d5080b.png)
 
 
@@ -31,8 +29,6 @@ dans lequel les modifications ont été effectuées. Ainsi, il est également po
 une modification apportée ainsi que sa date.
 
 ---
-
-## GITHUB
 
 ![github](https://user-images.githubusercontent.com/65951138/83818666-31f48580-a6c8-11ea-8584-cc9d2a6e2fa0.png)
 
@@ -124,8 +120,6 @@ branches dans la branche de production principale.
 - Continuez et supprimez la branche, après que vos modifications aient été intégrées, avec le bouton "Delete branch" en violet.
 
 ---
-
-## GLPI
 
 ![glpi](https://user-images.githubusercontent.com/65951138/83818633-26a15a00-a6c8-11ea-81a1-be26d9f7815c.png)
 
