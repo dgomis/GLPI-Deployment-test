@@ -79,8 +79,8 @@ Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dan
 - Cliquez sur le menu en haut de la liste des fichiers où vous pouvez trouver le titre: master,
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
-
-** APPORTER DES MODIFICATIONS (commit)
+_
+	APPORTER DES MODIFICATIONS (commit)
 
 Sur Github, les modifications enregistrées sont appelées commit. Chaque validation a un message de validation, 
 qui est une description expliquant pourquoi une modification particulière a été apportée. 
@@ -93,7 +93,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications
 
-* OUVRIR UN PULL REQUEST (extractions)
+	OUVRIR UN PULL REQUEST (extractions)
 
 L’onglet Pull requests permet de réaliser des demandes de pull. Les demandes de pull (extractions) vous permettent 
 d'informer les autres sur les modifications que vous avez appliquées à une branche d'un référentiel sur GitHub. 
