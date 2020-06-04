@@ -28,16 +28,21 @@ une modification apportée ainsi que sa date.
 ## GITHUB
 
 Pour comprendre ce qu'est GitHub et comment il fonctionne, vous devez d'abord comprendre ce qu'est Git, 
-le cœur de la plate-forme Web. Créé par Linux dude Linus Torvalds, Git est un logiciel de contrôle de version, 
-ce qui signifie qu'il contrôle et gère les mises à jour d'un projet sans écraser aucune partie du projet lui-même. 
+le cœur de la plate-forme Web. 
+
+Créé par Linux dude Linus Torvalds, Git est un logiciel de contrôle de version, ce qui signifie qu'il contrôle et gère 
+les mises à jour d'un projet sans écraser aucune partie du projet lui-même. 
+
 Il a été créé par Torvalds et ses collaborateurs lors du développement du noyau Linux: si une mise à jour n'a pas 
 donné les effets escomptés, vous pouvez toujours revenir en arrière et récupérer la version en cours d'exécution sans 
 trop de problèmes. Dans GitHub, ces concepts et pratiques ont été poussés à l'extrême, en les appliquant à un échantillon 
-beaucoup plus large et dans des environnements plus diversifiés. Grâce à Git, les utilisateurs de plateformes sociales créés 
-par Tom Preston-Werner, Chris Wanstrath et PJ Hyett pourront travailler simultanément sur la même version du même projet sans 
-craindre d'apporter des modifications substantielles. Toutes les anciennes versions seront stockées dans votre repository afin 
-que vous puissiez les récupérer en cas de besoin. De plus, pour chaque utilisateur au travail, une version différente du projet 
-sera créée afin de ne pas créer de superpositions ou d'écrasements gênants.
+beaucoup plus large et dans des environnements plus diversifiés. 
+
+Grâce à Git, les utilisateurs de plateformes sociales créés par Tom Preston-Werner, Chris Wanstrath et PJ Hyett pourront 
+travailler simultanément sur la même version du même projet sans craindre d'apporter des modifications substantielles. 
+Toutes les anciennes versions seront stockées dans votre repository afin que vous puissiez les récupérer en cas de besoin. 
+De plus, pour chaque utilisateur au travail, une version différente du projet sera créée afin de ne pas créer de superpositions 
+ou d'écrasements gênants.
 
 				COMMENT UTILISER GITHUB?
 
@@ -55,6 +60,7 @@ options telles que l'insertion d'un fichier de licence.
 - En haut à droite, après vous être connecté, cliquez sur + puis sélectionnez Nouveau repository.
 - Appelez votre repository XXXX.
 - Rédigez une brève description.
+
 
 	CRÉER UNE BRANCHE
 
@@ -74,6 +80,7 @@ Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dan
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
 
+
 	APPORTER DES MODIFICATIONS (commit)
 
 Sur Github, les modifications enregistrées sont appelées commit. Chaque validation a un message de validation, 
@@ -86,6 +93,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Dans l'éditeur, j'écris quelques choses.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications
+
 
 	OUVRIR UN PULL REQUEST (extractions)
 
@@ -100,7 +108,7 @@ sur le dépôt local. Git pull est en réalité la fusion de deux commandes Git 
 commit de fusion comme le fait  git merge. La commande  git pull exécute d'abord git fetch qui télécharge le contenu du référentiel 
 distant spécifié. Ensuite, un git merge est exécuté pour fusionner les modifications du dépôt distant et créer un nouveau commit de merge en local. 
 
-	DANS CETTE DERNIÈRE ÉTAPE, il est temps d'apporter vos modifications en les fusionnant à partir de vos 
+DANS CETTE DERNIÈRE ÉTAPE, il est temps d'apporter vos modifications en les fusionnant à partir de vos 
 branches dans la branche de production principale.
 
 - Cliquez sur le bouton vert de pull request pour fusionner (merge)les modifications avec la branche principale
@@ -191,26 +199,26 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## TÉLÉCHARGEMENT
 
-glpi: 
+- glpi: 
 	https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz
 
-FusionInventory:
+- FusionInventory:
 	https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz
 
-git:
+- git:
 	https://git-scm.com/download/win
 	
-github:
+- github:
 	https://github.com/
 	
 ---
 
 ## DOCUMENTATION
 
-Liste des sites utilisés pour l'nstallation et la configuration de glpi, git et github:
+- Liste des sites utilisés pour l'nstallation et la configuration de glpi, git et github:
     https://openclassrooms.com/fr
 
-Licence github (MIT LICENSE):
+- Licence github (MIT LICENSE):
     https://choosealicense.com/
 
 ---
