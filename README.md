@@ -1,3 +1,7 @@
+
+![python](https://user-images.githubusercontent.com/65951138/83819422-17231080-a6ca-11ea-8c67-e5baf8268ac7.jpg)
+
+
 ## PROJET6
 
 				AUTOMATISER L'INSTALLATION DE GLPI AVEC PYTHON
@@ -9,7 +13,8 @@ d’administration et de partager notre code avec la communauté sur notre répe
 
 ## GIT
 
-![glpi](https://user-images.githubusercontent.com/65951138/83818633-26a15a00-a6c8-11ea-81a1-be26d9f7815c.png)
+![git](https://user-images.githubusercontent.com/65951138/83818858-a5969280-a6c8-11ea-8679-694808d5080b.png)
+
 
 GIT est un outil de gestion de versions de code dont les développeurs peuvent se servir 
 afin de retrouver toutes leurs anciennes "versions". Mais Git ne permet pas uniquement cela, 
@@ -28,6 +33,9 @@ une modification apportée ainsi que sa date.
 ---
 
 ## GITHUB
+
+![github](https://user-images.githubusercontent.com/65951138/83818666-31f48580-a6c8-11ea-8584-cc9d2a6e2fa0.png)
+
 
 Pour comprendre ce qu'est GitHub et comment il fonctionne, vous devez d'abord comprendre ce qu'est Git, 
 le cœur de la plate-forme Web. 
@@ -119,6 +127,9 @@ branches dans la branche de production principale.
 
 ## GLPI
 
+![glpi](https://user-images.githubusercontent.com/65951138/83818633-26a15a00-a6c8-11ea-81a1-be26d9f7815c.png)
+
+	
 	À PROPOS DE GLPI
 
 GLPI (gestionnaire libre de parc informatique) est un logiciel qui, comme son nom l’indique, 
