@@ -9,6 +9,8 @@ d’administration et de partager notre code avec la communauté sur notre répe
 
 ## GIT
 
+![glpi](https://user-images.githubusercontent.com/65951138/83818633-26a15a00-a6c8-11ea-81a1-be26d9f7815c.png)
+
 GIT est un outil de gestion de versions de code dont les développeurs peuvent se servir 
 afin de retrouver toutes leurs anciennes "versions". Mais Git ne permet pas uniquement cela, 
 il couvre de nombreuses autres possibilités.
