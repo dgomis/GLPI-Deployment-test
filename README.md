@@ -9,6 +9,55 @@
 Dans ce projet6, il nous est demandé de créer un script permettant d’automatiser des tâches 
 d’administration et de partager notre code avec la communauté sur notre répertoire personnel GitHub.
 
+## SCRIPT PYTHON ET YAML
+
+Ce script personnalisé de python fait appel au script yaml sur lequel son stoquées les commandes d'installation. 
+Concernant les téléchargement, voir les liens ci-dessous
+
+	PRÉ-REQUIS
+
+1. Python version 3 ou supérieur: apt install python3
+2. Pip3 version 19.2.1 ou supérieur: apt install python3-pip pip3 install --upgrade pip
+3. Module python yaml: apt install python3-yaml
+4. Module python mysql-connector: pip3 install mysql-connector
+5. Modules Python Wget: pip3 install wget
+6. Importer les modules suivants dans le script python: os, sys, yaml, mysql.connector, subprocess, urllib.request, tarfile, shutil
+
+	EXÉCUTION DU SCRIPT PYTHON
+
+Pour lancer l'exécution du script, il faut exécuter en root la commande suivante: 
+
+==> python3 installation.py commande.yaml
+
+Une fois l’exécution du script terminée sans erreurs, il faut désormais ouvrir votre navigateur favori 
+et taper dans la barre d’adresse l'IP de votre machine, suivie de /glpi comme ci-dessous:
+
+==> http://IP_MACHINE/glpi. La page d'accueil de glpi doit alors s'ouvrir
+
+	LANGAGE UTILISÉ
+
+- Python3
+
+	pyBreakDown
+
+Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
+
+    1 : Impossible de lire le fichier YAML
+    2 : Erreur lors de la mise à jour du gestion de paquets
+    3 : Erreur lors de l’installation des composants
+    4 : Erreur lors de la lecture du fichier template de configuration apache
+    5 : Erreur lors de l'ouverture du fichier apache du système
+    6 : Erreur lors de la modification de l’autorisation du fichier de configuration apache
+    7 : Erreur lors de l'ajout des paquets d’installation php
+    8 : Erreur lors de la sécurisation de la base de données
+    9 : Erreur lors de la connexion à la base de données
+    10 : Erreur lors de la création du dossier wordpress
+    11 : Erreur lors du téléchargement des fichies Wordpress
+    12 : Erreur lors de l’extraction du dossier Wordpress
+    13 : Erreur lors du déplacement du dossier Wordpress
+    14 : Erreur lors de la modification des droits sur le dossier Wordpress
+    15 : Erreur lors du changement de dossier système
+
 ---
 
 ![git](https://user-images.githubusercontent.com/65951138/83818858-a5969280-a6c8-11ea-8679-694808d5080b.png)
@@ -199,7 +248,8 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
 - [Git](https://git-scm.com/download/win)	
 - [GitHub](https://github.com/)
-	
+- [Git Clone](git clone https://github.com/oupasbenith/Projet6.git)
+
 ---
 
 ## DOCUMENTATION
@@ -207,13 +257,13 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [Openclassrooms](https://openclassrooms.com/fr)
 - [Licence open-source](https://choosealicense.com/)
 - [Youtube](https://www.youtube.com/watch?v=4o9qzbssfII)
+- [Glpi](https://glpi-install.readthedocs.io/en/latest/index.html)
 
 ---
 
 ## CONTRIBUTEURS
 
 - Dacky GOMIS <yes@darillgomis.ca>
-- Antony USÉ <hacking@tonyuse.com>
 
 ---
 
@@ -221,6 +271,6 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 Dacky GOMIS, étudiant Openclassrooms
 
-Sous licence [MIT License](LICENCE).
+Ce projet est sous [MIT License](LICENCE).
 
 ---
