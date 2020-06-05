@@ -195,21 +195,21 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## TÉLÉCHARGEMENT
 
-- Pour télécharger glpi, cliquez [ici](https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz)
+- [Glpi](https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz)
 
-- Pour télécharger FusionInventory, cliquez [ici](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
+- [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
 
-- Pour télécharger git, cliquez [ici](https://git-scm.com/download/win)
+- [Git](https://git-scm.com/download/win)
 	
-- Pour créer un compte sur github, cliquez [ici](https://github.com/)
+- [GitHub](https://github.com/)
 	
 ---
 
 ## DOCUMENTATION
 
-- Plate-forme de support pour l'installation et la configuration de glpi, git et github. Suivre cette flèche [-->](https://openclassrooms.com/fr)
-
-- Pour obtenir la Licence MIT pour github, suivre ce [lien](https://choosealicense.com/)
+- [Openclassrooms](https://openclassrooms.com/fr)
+- [Licence open-source](https://choosealicense.com/)
+- [Youtube](https://www.youtube.com/watch?v=4o9qzbssfII)
 
 ---
 
