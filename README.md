@@ -207,7 +207,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## DOCUMENTATION
 
-- Plate-forme de support pour l'installation et la configuration de glpi, git et github [-->](https://openclassrooms.com/fr)
+- Plate-forme de support pour l'installation et la configuration de glpi, git et github. Suivre cette flèche [-->](https://openclassrooms.com/fr)
 
 - Pour obtenir la Licence MIT pour github, suivre ce [lien](https://choosealicense.com/)
 
