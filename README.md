@@ -52,7 +52,7 @@ ou d'écrasements gênants.
 
 ## COMMENT UTILISER GITHUB?
 
-	CRÉER UN REPOSITORY
+	1. CRÉER UN REPOSITORY
 
 Un repository est généralement utilisé pour organiser un projet. Les repositorys peuvent 
 contenir des dossiers et des fichiers, des images, des vidéos, des feuilles de calcul et des 
@@ -61,14 +61,14 @@ toujours inclure un fichier README ou un fichier contenant des informations sur 
 Github facilite la création d'un au moment où vous créez des repositorys. Il vous offre d'autres 
 options telles que l'insertion d'un fichier de licence.
 
-	1. POUR CRÉER UN NOUVEAU REPOSITORY:
+	2. POUR CRÉER UN NOUVEAU REPOSITORY:
 
 - En haut à droite, après vous être connecté, cliquez sur + puis sélectionnez Nouveau repository.
 - Appelez votre repository XXXX.
 - Rédigez une brève description.
 
 
-	2. CRÉER UNE BRANCHE
+	3. CRÉER UNE BRANCHE
 
 Créer une branche est une façon de travailler sur plusieurs versions d'un projet à la fois. 
 Par défaut, votre repository a une branche nommée master qui est considérée comme la dernière branche. 
@@ -79,14 +79,14 @@ vous pouvez récupérer vos mises à jour. Les développeurs, rédacteurs et con
 des branches pour suivre les corrections de bugs et les fonctionnalités distinctes de la production principale. 
 Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dans le master.
 
-	3. POUR CRÉER UNE NOUVELLE BRANCHE:
+	4. POUR CRÉER UNE NOUVELLE BRANCHE:
 
 - Accédez à votre nouveau repository XXXX,
 - Cliquez sur le menu en haut de la liste des fichiers où vous pouvez trouver le titre: master,
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
 
-	4 -APPORTER DES MODIFICATIONS (commit)
+	5. APPORTER DES MODIFICATIONS (commit)
 
 Sur Github, les modifications enregistrées sont appelées commit. Chaque validation a un message de validation, 
 qui est une description expliquant pourquoi une modification particulière a été apportée. 
@@ -99,7 +99,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications
 
-	5 - OUVRIR UN PULL REQUEST (extractions)
+	6. OUVRIR UN PULL REQUEST (extractions)
 
 L’onglet Pull requests permet de réaliser des demandes de pull. Les demandes de pull (extractions) vous permettent 
 d'informer les autres sur les modifications que vous avez appliquées à une branche d'un référentiel sur GitHub. 
@@ -112,7 +112,7 @@ sur le dépôt local. Git pull est en réalité la fusion de deux commandes Git 
 commit de fusion comme le fait  git merge. La commande  git pull exécute d'abord git fetch qui télécharge le contenu du référentiel 
 distant spécifié. Ensuite, un git merge est exécuté pour fusionner les modifications du dépôt distant et créer un nouveau commit de merge en local. 
 
-	6. DANS CETTE DERNIÈRE ÉTAPE, il est temps d'apporter vos modifications en les fusionnant à partir de vos 
+	7. DANS CETTE DERNIÈRE ÉTAPE, il est temps d'apporter vos modifications en les fusionnant à partir de vos 
 branches dans la branche de production principale.
 
 - Cliquez sur le bouton vert de pull request pour fusionner (merge)les modifications avec la branche principale
