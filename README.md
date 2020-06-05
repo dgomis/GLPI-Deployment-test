@@ -207,11 +207,9 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## DOCUMENTATION
 
-- Liste des sites utilisés pour l'nstallation et la configuration de glpi, git et github:
-    https://openclassrooms.com/fr
+- Plate-forme de support pour l'installation et la configuration de glpi, git et github [-->](https://openclassrooms.com/fr)
 
-- Licence github (MIT LICENSE):
-    https://choosealicense.com/
+- Pour obtenir la Licence MIT pour github, suivre ce [lien](https://choosealicense.com/)
 
 ---
 
@@ -226,6 +224,6 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 Dacky GOMIS, étudiant Openclassrooms
 
-Sous licence [MIT License] (LICENSE). Juin 2020
+Sous licence [MIT License](LICENCE). Juin 2020
 
 ---
