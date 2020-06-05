@@ -24,22 +24,26 @@ Concernant les téléchargement, voir les liens ci-dessous
 5. Modules Python Wget: pip3 install wget
 6. Importer les modules suivants dans le script python: os, sys, yaml, mysql.connector, subprocess, urllib.request, tarfile, shutil
 
+Ces pré-requis sont nécessaires à l'exécution du script
+
 	EXÉCUTION DU SCRIPT PYTHON
 
 Pour lancer l'exécution du script, il faut exécuter en root la commande suivante: 
 
-==> python3 installation.py commande.yaml
+- python3 installation.py commandes.yaml
 
 Une fois l’exécution du script terminée sans erreurs, il faut désormais ouvrir votre navigateur favori 
 et taper dans la barre d’adresse l'IP de votre machine, suivie de /glpi comme ci-dessous:
 
-==> http://IP_MACHINE/glpi. La page d'accueil de glpi doit alors s'ouvrir
+- http://IP_serveur/glpi
+
+La page d'accueil de glpi doit alors s'ouvrir.
 
 	LANGAGE UTILISÉ
 
 - Python3
 
-	pyBreakDown
+## pyBreakDown
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
@@ -83,6 +87,9 @@ une modification apportée ainsi que sa date.
 ![github](https://user-images.githubusercontent.com/65951138/83818666-31f48580-a6c8-11ea-8584-cc9d2a6e2fa0.png)
 
 
+GitHub est un outil de communication et de collaboration entre plusieurs développeurs (ou tout autre personne qui écrit du texte). 
+C’est une interface web créée pour faciliter l’interaction avec Git.
+
 Pour comprendre ce qu'est GitHub et comment il fonctionne, vous devez d'abord comprendre ce qu'est Git, 
 le cœur de la plate-forme Web. 
 
@@ -116,7 +123,8 @@ options telles que l'insertion d'un fichier de licence.
 - En haut à droite, après vous être connecté, cliquez sur + puis sélectionnez Nouveau repository.
 - Appelez votre repository XXXX.
 - Rédigez une brève description.
-
+On peut voir un dépôt Git comme un entrepôt virtuel de notre projet qui nous permet d'enregistrer 
+les versions de notre code et d'y accéder au besoin.
 
 	3. CRÉER UNE BRANCHE
 
@@ -131,10 +139,12 @@ Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dan
 
 	4. POUR CRÉER UNE NOUVELLE BRANCHE:
 
-- Accédez à votre nouveau repository XXXX,
+- Accédez à votre nouveau repository glpi,
 - Cliquez sur le menu en haut de la liste des fichiers où vous pouvez trouver le titre: master,
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
+Le but est de ne surtout pas réaliser les modifications directement sur la branche master, mais de réaliser 
+les modifications sur d’autres branches, et après tests, les intégrer sur la branche master.
 
 	5. APPORTER DES MODIFICATIONS (commit)
 
@@ -148,6 +158,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Dans l'éditeur, j'écris quelques choses.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications.
+Un commit est tout simplement un enregistrement de notre travail à un instant T sur la branche courante où l'on se trouve.
 
 	6. OUVRIR UN PULL REQUEST (extractions)
 
