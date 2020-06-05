@@ -201,7 +201,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 - Pour télécharger git, cliquez [ici](https://git-scm.com/download/win)
 	
-- Pour télécharger github, cliquez [ici](https://github.com/)
+- Pour créer un compte sur github, cliquez [ici](https://github.com/)
 	
 ---
 
