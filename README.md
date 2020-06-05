@@ -11,7 +11,8 @@ d’administration et de partager notre code avec la communauté sur notre répe
 
 ## SCRIPT PYTHON ET YAML
 
-Ce script personnalisé de python fait appel au script yaml sur lequel son stoquées les commandes d'installation. 
+Ce script personnalisé de python fait appel au script yaml sur lequel sont stoquées les commandes d'installation. 
+
 Concernant les téléchargement, voir les liens ci-dessous
 
 	PRÉ-REQUIS
@@ -248,7 +249,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
 - [Git](https://git-scm.com/download/win)	
 - [GitHub](https://github.com/)
-- [Git Clone](git clone https://github.com/oupasbenith/Projet6.git)
+- [Git Clone](https://github.com/oupasbenith/Projet6.git)
 
 ---
 
