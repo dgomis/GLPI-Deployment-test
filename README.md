@@ -195,16 +195,13 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## TÉLÉCHARGEMENT
 
-- glpi: 
-	https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz
+- Pour télécharger glpi, cliquez ["ici"](https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz)
 
-- FusionInventory:
-	https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz
+- Pour télécharger FusionInventory, cliquez ["ici"](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
 
-- Pour télécharger git, cliquez ['ICI'](https://git-scm.com/download/win)
+- Pour télécharger git, cliquez ["ici"](https://git-scm.com/download/win)
 	
-- github:
-	https://github.com/
+- Pour télécharger github, cliquez ["ici"](https://github.com/)
 	
 ---
 
