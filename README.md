@@ -196,11 +196,8 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 ## TÉLÉCHARGEMENT
 
 - [Glpi](https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz)
-
 - [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
-
-- [Git](https://git-scm.com/download/win)
-	
+- [Git](https://git-scm.com/download/win)	
 - [GitHub](https://github.com/)
 	
 ---
@@ -224,6 +221,6 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 Dacky GOMIS, étudiant Openclassrooms
 
-Sous licence [MIT License](LICENCE). Juin 2020
+Sous licence [MIT License](LICENCE).
 
 ---
