@@ -123,6 +123,7 @@ options telles que l'insertion d'un fichier de licence.
 - En haut à droite, après vous être connecté, cliquez sur + puis sélectionnez Nouveau repository.
 - Appelez votre repository XXXX.
 - Rédigez une brève description.
+
 On peut voir un dépôt Git comme un entrepôt virtuel de notre projet qui nous permet d'enregistrer 
 les versions de notre code et d'y accéder au besoin.
 
@@ -143,6 +144,7 @@ Lorsqu'une modification est prête, ils fusionnent à partir de leur branche dan
 - Cliquez sur le menu en haut de la liste des fichiers où vous pouvez trouver le titre: master,
 - Écrivez un nom de branche, par exemple "GLPI", dans la zone de texte,
 - Sélectionnez la case Créer ou appuyez sur Entrée sur le clavier.
+
 Le but est de ne surtout pas réaliser les modifications directement sur la branche master, mais de réaliser 
 les modifications sur d’autres branches, et après tests, les intégrer sur la branche master.
 
@@ -158,6 +160,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Dans l'éditeur, j'écris quelques choses.
 - Écrivez un message de validation décrivant votre changement
 - Cliquez sur le bouton Valider les modifications.
+
 Un commit est tout simplement un enregistrement de notre travail à un instant T sur la branche courante où l'on se trouve.
 
 	6. OUVRIR UN PULL REQUEST (extractions)
