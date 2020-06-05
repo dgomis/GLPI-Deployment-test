@@ -97,7 +97,7 @@ puissent comprendre ce que vous avez fait et pourquoi.
 - Cliquez sur l'icône en forme de crayon en haut à droite de la vue du fichier pour effectuer une modification.
 - Dans l'éditeur, j'écris quelques choses.
 - Écrivez un message de validation décrivant votre changement
-- Cliquez sur le bouton Valider les modifications
+- Cliquez sur le bouton Valider les modifications.
 
 	6. OUVRIR UN PULL REQUEST (extractions)
 
@@ -113,7 +113,7 @@ commit de fusion comme le fait  git merge. La commande  git pull exécute d'abor
 distant spécifié. Ensuite, un git merge est exécuté pour fusionner les modifications du dépôt distant et créer un nouveau commit de merge en local. 
 
 	7. DANS CETTE DERNIÈRE ÉTAPE, il est temps d'apporter vos modifications en les fusionnant à partir de vos 
-branches dans la branche de production principale.
+	   branches dans la branche de production principale.
 
 - Cliquez sur le bouton vert de pull request pour fusionner (merge)les modifications avec la branche principale
 - Cliquez sur Confirm merge
