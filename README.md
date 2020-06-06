@@ -47,21 +47,17 @@ La page d'accueil de glpi doit alors s'ouvrir.
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
-    1 : Impossible de lire le fichier YAML
+    1 : Erreur de lecture du fichier YAML
     2 : Erreur lors de la mise à jour du gestion de paquets
-    3 : Erreur lors de l’installation des composants
-    4 : Erreur lors de la lecture du fichier template de configuration apache
-    5 : Erreur lors de l'ouverture du fichier apache du système
-    6 : Erreur lors de la modification de l’autorisation du fichier de configuration apache
-    7 : Erreur lors de l'ajout des paquets d’installation php
-    8 : Erreur lors de la sécurisation de la base de données
-    9 : Erreur lors de la connexion à la base de données
-    10 : Erreur lors de la création du dossier wordpress
-    11 : Erreur lors du téléchargement des fichies Wordpress
-    12 : Erreur lors de l’extraction du dossier Wordpress
-    13 : Erreur lors du déplacement du dossier Wordpress
-    14 : Erreur lors de la modification des droits sur le dossier Wordpress
-    15 : Erreur lors du changement de dossier système
+	3 : Erreur lors de la création de la bd
+    4 : Erreur de téléchargement glpi
+    5 : Erreur décompression glpi
+    6 : Erreur déplacement glpi
+    7 : Erreur de création du compte et de la base de donnée dans la console
+    8 : Erreur téléchargement fusioninventory
+    9 : Erreur décompression fusioninventory
+    10 : Erreur déplacement fusioninventory
+    11 : Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi
 
 ---
 
