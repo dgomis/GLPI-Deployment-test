@@ -121,7 +121,7 @@ options telles que l'insertion d'un fichier de licence.
 	2. POUR CRÉER UN NOUVEAU REPOSITORY:
 
 - En haut à droite, après vous être connecté, cliquez sur + puis sélectionnez Nouveau repository.
-- Appelez votre repository XXXX.
+- Appelez votre repository glpi.
 - Rédigez une brève description.
 
 On peut voir un dépôt Git comme un entrepôt virtuel de notre projet qui nous permet d'enregistrer 
