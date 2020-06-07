@@ -280,7 +280,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## LICENSE & COPYRIGHT
 
-Oupas BENITH, étudiant Openclassrooms
+Oupas BENITH, étudiant 
 
 Ce projet est sous [MIT License](LICENCE).
 
