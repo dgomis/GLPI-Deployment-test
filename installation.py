@@ -43,7 +43,7 @@ try:
     for db in mycursor:
         os.system("db")
 
-except mysql.Error as ErrMysql:
+except mysql.connector.Error as ErrMysql:
     print(ErrMysql)
     sys.exit(1)
 else:
