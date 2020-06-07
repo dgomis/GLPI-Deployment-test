@@ -274,13 +274,13 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## CONTRIBUTEURS
 
-- Dacky GOMIS <yes@darillgomis.ca>
+- Oupas BENITH <yes@darillbenith.ca>
 
 ---
 
 ## LICENSE & COPYRIGHT
 
-Dacky GOMIS, étudiant Openclassrooms
+Oupas BENITH, étudiant Openclassrooms
 
 Ce projet est sous [MIT License](LICENCE).
 
