@@ -32,13 +32,14 @@ os.system(data["install_mariadb"])
 print("***Utilisation de mysql.connector***")
 try:
     db_connector = mysql.connector.connect(
-        host='data["db_host"]',
+        host=data["db_host"] ,
         port="3306",
-        user='data["db_user"]',
-		password='data["db_userPwd"]')
+        user=data["db_user"],
+		password=data["db_userPwd"]
+	)
 
     mycursor = db_connector.cursor()
-    mycursor.execute("CREATE DATABASE "+data["db_name"]"")
+    mycursor.execute("CREATE DATABASE " + data["db_name"])
 
     for db in mycursor:
         os.system("db")
@@ -49,7 +50,7 @@ except mysql.Error as ErrMysql:
 else:
     print("***Pas d'erreur lors de la création de la bd***")
 
-os.system('mysql','-e',"GRANT ALL PRIVILEGES ON *.* TO '"+data["db_user"]+"'@'localhost' IDENTIFIED BY "+data["db_userPwd"]"")
+os.system('mysql', '-e', "GRANT ALL PRIVILEGES ON *.* TO '" + data["db_user"] + "'@'localhost' IDENTIFIED BY " + data["db_userPwd"] )
 
 db_connector.close()
 print("***Connexion mysql close***")
@@ -70,7 +71,7 @@ print("***Localisation des entêtes: ", headers)
 # Décompression de glpi
 print("***Début de décompression de glpi***")
 try:
-    my_tar1 = tarfile.open(data["working_folder"]+data["glpi_archive"])
+    my_tar1 = tarfile.open(data["working_folder"] + data["glpi_archive"])
     my_tar1.extractall(data["working_folder"])
 except:
     print("***Erreur décompression glpi***")
@@ -82,7 +83,7 @@ my_tar1.close()
 # Déplacement de glpi dans le répertoire /html
 print("***Début de déplacement de glpi dans le répertoire /html***")
 try:
-    shutil.move(data["working_folder"]+data["glpi_folder"], data["webroot"])
+    shutil.move(data["working_folder"] + data["glpi_folder"], data["webroot"])
 except:
 	print("***Erreur déplacement glpi***")
     sys.exit(4)
@@ -93,8 +94,8 @@ print("***Fin décompression de glpi***")
 # On crée la base de donnée et le compte dans la console
 print("***Début de création de la base de donnée et du compte dans la console***")
 try:
-    os.chdir(data["webroot"]+data["glpi_folder"])
-    os.system("php bin/console db:install -d "+data["db_name"]+" -u "+data["db_user"]+" -p "+data["db_userPwd"]+" -L fr_FR")
+    os.chdir(data["webroot"] + data["glpi_folder"])
+    os.system("php bin/console db:install -d " + data["db_name"] + " -u " + data["db_user"] + " -p " + data["db_userPwd"] + " -L fr_FR")
 except:
     print("***Erreur de création du compte et de la base de donnée dans la console***")
 	sys.exit(5)
@@ -105,7 +106,7 @@ else:
 print("***Début téléchargement fusioninventory!***")
 try:
     url = (data["url_fusinv"])
-    filename, headers = urllib.request.urlretrieve(url, filename=data["working_folder"]+data["fusinv_archive"])
+    filename, headers = urllib.request.urlretrieve(url, filename = data["working_folder"] + data["fusinv_archive"])
 except:
     print("***Erreur téléchargement fusioninventory***")
     sys.exit(6)
@@ -117,7 +118,7 @@ print("***Localisation des entêtes: ", headers)
 # Décompression de fusioninventory
 print("***Début décompression fusioninventory***")
 try:
-    my_tar2 = tarfile.open(data["working_folder"]+data["fusinv_archive"])
+    my_tar2 = tarfile.open(data["working_folder"] + data["fusinv_archive"])
     my_tar2.extractall(data["working_folder"])
 except:
     print("***Erreur décompression fusioninventory***")
@@ -129,7 +130,7 @@ my_tar2.close()
 # Déplacement de fionsioninventory dans le répertoire /fusioninventory
 print("***Début déplacement de fusioninventory dans le répertoire /fusioninventory***")
 try:
-    shutil.move(data["working_folder"]+data["fusinv_folder"], data["webroot"]+data["fusinv_working_folder"])
+    shutil.move(data["working_folder"] + data["fusinv_folder"], data["webroot"] + data["fusinv_working_folder"])
 except:
     print("***Erreur déplacement fusioninventory***")
     sys.exit(8)
@@ -139,7 +140,7 @@ else:
 # Droits LAMP sur les fichiers glpi
 print("***Début attribution des droits au serveur LAMP sur les fichiers de glpi***")
 try:
-    os.system("chown –R www-data "+ data["webroot"]+data["glpi_folder"])
+    os.system("chown –R www-data " + data["webroot"] + data["glpi_folder"])
 except:
     print("**Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi**")
     sys.exit(9)
