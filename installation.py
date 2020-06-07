@@ -2,7 +2,7 @@
 # -*-coding:Utf-8 -*
 
 """Ce script a pour but d'automatiser l'installation de glpi dans un environnement Apache2, Mariadb et PHP7.3. Il est prévu pour fonctionnement sous Debian 10."""
-"""Copyright 2020, M.GOMIS Dacky, MIT License"""
+"""Copyright 2020, M.BENITH Oupas, MIT License"""
 """Pour plus d'informations sur le script, lire le fichier README.md"""
 
 """Import des modules Python"""
@@ -32,13 +32,13 @@ os.system(data["install_mariadb"])
 print("***Utilisation de mysql.connector***")
 try:
     db_connector = mysql.connector.connect(
-        host='data["db_host"]',
+        host=data["db_host"],
         port="3306",
-        user='data["db_user"]',
-		password='data["db_userPwd"]')
+        user=data["db_user"],
+		password=data["db_userPwd"])
 
     mycursor = db_connector.cursor()
-    mycursor.execute("CREATE DATABASE "+data["db_name"]"")
+    mycursor.execute("CREATE DATABASE" + data["db_name"])
 
     for db in mycursor:
         os.system("db")
@@ -49,7 +49,7 @@ except mysql.Error as ErrMysql:
 else:
     print("***Pas d'erreur lors de la création de la bd***")
 
-os.system('mysql','-e',"GRANT ALL PRIVILEGES ON *.* TO '"+data["db_user"]+"'@'localhost' IDENTIFIED BY "+data["db_userPwd"]"")
+os.system('mysql -e "GRANT ALL PRIVILEGES ON *.* TO "+data["db_user"]+"'@\'localhost\' IDENTIFIED BY "+data["db_userPwd"]""')
 
 db_connector.close()
 print("***Connexion mysql close***")
