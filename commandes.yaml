@@ -16,7 +16,7 @@ db_user: "glpiuser"
 
 db_host: "localhost"
 
-db_userPwd: "P@$$w0rdEd10"
+db_userPwd: "Mon_password"
 
 db_name: "glpibd"
 
@@ -24,7 +24,7 @@ webroot: "/var/www/html/"
 
 glpi_folder: "glpi"
 
-working_folder: "/home/dacky/Téléchargements/"
+working_folder: "/home/mon_rep/Téléchargements/"
 
 url_glpi: "https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz"
 
