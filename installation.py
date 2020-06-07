@@ -35,8 +35,8 @@ try:
         host='data["db_host"]',
         port="3306",
         user='data["db_user"]',
-		password='data["db_userPwd"]')
-
+        password='data["db_userPwd"]')
+    
     mycursor = db_connector.cursor()
     mycursor.execute("CREATE DATABASE "+data["db_name"]"")
 
