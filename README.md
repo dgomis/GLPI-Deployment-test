@@ -2,11 +2,11 @@
 ![python](https://user-images.githubusercontent.com/65951138/83819422-17231080-a6ca-11ea-8c67-e5baf8268ac7.jpg)
 
 
-## PROJET6
+## MyProject
 
 				AUTOMATISER L'INSTALLATION DE GLPI AVEC PYTHON
 
-Dans ce projet6, il nous est demandé de créer un script permettant d’automatiser des tâches 
+Dans ce projet, il nous est demandé de créer un script permettant d’automatiser des tâches 
 d’administration et de partager notre code avec la communauté sur notre répertoire personnel GitHub.
 
 ## SCRIPT PYTHON ET YAML
