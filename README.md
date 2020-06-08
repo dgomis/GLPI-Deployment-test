@@ -6,14 +6,13 @@
 
 				AUTOMATISER L'INSTALLATION DE GLPI AVEC PYTHON
 
-Dans ce projet, il nous est demandé de créer un script permettant d’automatiser des tâches 
-d’administration et de partager notre code avec la communauté sur notre répertoire personnel GitHub.
+Pour ce projet, j'ai créé un script permettant d’automatiser des tâches d’administration. 
 
 ## SCRIPT PYTHON ET YAML
 
 Ce script personnalisé de python fait appel au script yaml sur lequel sont stoquées les commandes d'installation. 
 
-Concernant les téléchargement, voir les liens ci-dessous
+Concernant les téléchargements, voir les liens ci-dessous.
 
 	PRÉ-REQUIS
 
@@ -274,13 +273,13 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ## CONTRIBUTEURS
 
-- Oupas BENITH <yes@darillbenith.ca>
+- D. GOMIS <yes@darillbenith.ca>
 
 ---
 
 ## LICENSE & COPYRIGHT
 
-Oupas BENITH, étudiant 
+D. GOMIS, étudiant Openclassrooms
 
 Ce projet est sous [MIT License](LICENCE).
 
