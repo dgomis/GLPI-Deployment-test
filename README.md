@@ -10,7 +10,7 @@ Pour ce projet, j'ai créé un script permettant d’automatiser des tâches d�
 
 ## SCRIPT PYTHON ET YAML
 
-Ce script personnalisé de python fait appel au script yaml sur lequel sont stoquées les commandes d'installation. 
+Ce script personnalisé de python fait appel au script yaml sur lequel sont stockées les commandes d'installation. 
 
 Concernant les téléchargements, voir les liens ci-dessous.
 
@@ -47,7 +47,7 @@ La page d'accueil de glpi doit alors s'ouvrir.
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
     1 : Erreur de lecture du fichier YAML
-    2 : Erreur lors de la mise à jour du gestion de paquets
+    2 : Erreur lors de la mise à jour de la gestion des paquets
 	3 : Erreur lors de la création de la bd
     4 : Erreur de téléchargement glpi
     5 : Erreur décompression glpi
