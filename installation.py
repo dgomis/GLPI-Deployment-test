@@ -24,7 +24,8 @@ os.system(data["install_mariadb"])
 
 # Création base de donnée et user
 print("***Utilisation de mysql.connector***")
-os.system('mysql -e "GRANT ALL PRIVILEGES ON *.* TO  + " data["db_user"] " + @ + " data["db_host"] " + "IDENTIFIED BY" + " data["db_userPwd"]""')
+		# ou plus simple --> os.system(data["bd_privileges"])
+os.system('mysql -e "GRANT ALL PRIVILEGES ON *.* TO  "+ data["db_user"] +"@"localhost" + IDENTIFIED BY "+ data["db_userPwd"]""')
 try:
     conn = mysql.connector.connect(
         host = 'data["db_host"]',
@@ -49,14 +50,22 @@ finally:
 		conn.close()
 print("***Connexion mysql close***")
 
+# Création du dossier Downloads pour les téléchargements
+try:
+	os.chdir('/tmp/')
+	os.system(data["rep_create"])
+except Exception as z:
+	print(f"*** Erreur de création du répertoire Downloads : {z} ! ***")
+	sys.exit(2)
+
 # Téléchargement de GLPI)
 print("***Début téléchargement glpi***")
 try:
-    url = ('data["url_glpi"]')
-    filename, headers = urllib.request.urlretrieve(url, filename = 'data["dossier_glpi"]')
-except:
-    print("***Erreur de téléchargement glpi***")
-    sys.exit(2)
+    url = 'data["url_glpi"]'
+    filename, headers = urllib.request.urlretrieve(url, filename = 'data["working_folder"]' + 'data["glpi_archive"]')
+except Exception as e:
+    print(f"***Erreur de téléchargement glpi : {e} !***")
+    sys.exit(3)
 else:
     print("***GLPI téléchargé***")
 print("***Localisation des fichiers: ", filename)
@@ -67,9 +76,9 @@ print("***Début de décompression de glpi***")
 try:
     my_tar1 = tarfile.open('data["working_folder"]'+'data["glpi_archive"]')
     my_tar1.extractall(data["working_folder"])
-except:
-    print("***Erreur décompression glpi***")
-    sys.exit(3)
+except Exception as b:
+    print(f"***Erreur décompression glpi : {b} !***")
+    sys.exit(4)
 else:
     print("***Décompression terminée***")
 my_tar1.close()
@@ -78,9 +87,9 @@ my_tar1.close()
 print("***Début de déplacement de glpi dans le répertoire /html***")
 try:
     shutil.move('data["working_folder"]'+'data["glpi_folder"],' + ' data["webroot"]')
-except:
-	print("***Erreur déplacement glpi***")
-    sys.exit(4)
+except Exception as c:
+	print(f"***Erreur déplacement glpi : {c} !***")
+    sys.exit(5)
 else:
     print("GLPI déplacé")
 print("***Fin décompression de glpi***")
@@ -90,9 +99,9 @@ print("***Début de création de la base de donnée et du compte dans la console
 try:
     os.chdir('data["webroot"]'+'data["glpi_folder"]')
     os.system('php bin/console db:install -d' + ' data["db_name"] ' + '-u' + ' data["db_user"] ' + '-p' + ' data["db_userPwd"] ' + '-L fr_FR')
-except:
-    print("***Erreur de création du compte et de la base de donnée dans la console***")
-	sys.exit(5)
+except Exception as dg:
+    print(f"***Erreur de création du compte et de la base de donnée dans la console : {dg} !***")
+	sys.exit(6)
 else:
     print("**Compte et base de donnée créés dans la console**")
 
@@ -101,9 +110,9 @@ print("***Début téléchargement fusioninventory!***")
 try:
     url = ('data["url_fusinv"]')
     filename, headers = urllib.request.urlretrieve(url, filename = 'data["working_folder"]' + 'data["fusinv_archive"]')
-except:
-    print("***Erreur téléchargement fusioninventory***")
-    sys.exit(6)
+except Exception as k:
+    print(f"***Erreur téléchargement fusioninventory : {k} !***")
+    sys.exit(7)
 else:
     print("***Fusioninventory téléchargé***")
 print("***Localisation du fichier: ", filename)
@@ -114,9 +123,9 @@ print("***Début décompression fusioninventory***")
 try:
     my_tar2 = tarfile.open('data["working_folder"]' + 'data["fusinv_archive"]')
     my_tar2.extractall('data["working_folder"]')
-except:
-    print("***Erreur décompression fusioninventory***")
-    sys.exit(7)
+except Exception as m:
+    print(f"***Erreur décompression fusioninventory : {m} !***")
+    sys.exit(8)
 else:
     print("***Fusioninventory décompressé***")
 my_tar2.close()
@@ -125,9 +134,9 @@ my_tar2.close()
 print("***Début déplacement de fusioninventory dans le répertoire /fusioninventory***")
 try:
     shutil.move('data["working_folder"]' + 'data["fusinv_folder"],' + ' data["webroot"]' + 'data["fusinv_working_folder"]')
-except:
-    print("***Erreur déplacement fusioninventory***")
-    sys.exit(8)
+except Exception as r:
+    print(f"***Erreur déplacement fusioninventory : {r} !***")
+    sys.exit(9)
 else:
     print("***Fusioninventory déplacé***")
 
@@ -135,11 +144,11 @@ else:
 print("***Début attribution des droits au serveur LAMP sur les fichiers de glpi***")
 try:
     os.system('chown –R www-data' + 'data["webroot"]' + 'data["glpi_folder"]')
-except:
+except Exception as w:
     print("**Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi**")
-    sys.exit(9)
+    sys.exit(10)
 else:
-    print("Droits attribués au serveur LAMP pour agir sur les fichiers de glpi")
+    print(f"**Droits attribués au serveur LAMP pour agir sur les fichiers de glpi : {w} !**")
 
 glpi.close()
 print("***INSTALLATION GLPI TERMINEE...!!!***")
