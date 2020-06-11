@@ -12,19 +12,23 @@ install_php7: "apt install -y php7.3 php7.3-curl php7.3-gd php7.3-intl php-pear 
 
 install_mariadb: "apt install -y mariadb-server"
 
-db_user: "glpiuser"
+db_user: "mon_user"
 
 db_host: "localhost"
 
-db_userPwd: "Mon_password"
+db_userPwd: "son_password"
 
-db_name: "glpibd"
+db_name: "glpi_bd"
+
+rep_create: "mkdir Downloads"
+
+#bd_privileges: 'mysql','-e',"GRANT ALL PRIVILEGES ON *.* TO 'mon_user'@'localhost' IDENTIFIED BY 'son_password'"
 
 webroot: "/var/www/html/"
 
 glpi_folder: "glpi"
 
-working_folder: "/home/mon_rep/Téléchargements/"
+working_folder: "/tmp/Downloads"
 
 url_glpi: "https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz"
 
