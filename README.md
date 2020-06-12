@@ -75,12 +75,12 @@ git config --global core.editor subl
 git config --global merge.tool filemerge
 
 
-	CLONER LE DÉPÔT EN LOCAL
+# CLONER LE DÉPÔT EN LOCAL
 	
 git clone https://github.com/oupasbenith/MyProject.git
 
 	
-	ACTIVATION DES COULEURS
+# ACTIVATION DES COULEURS
 	
 git config --global color.diff auto
 
@@ -88,54 +88,59 @@ git config --global color.status auto
 
 git config --global color.branch auto
 
-	CHANGER L'ÉDITEUR
+
+# CHANGER L'ÉDITEUR
 
 git config --global core.editor notepad++
 
 git config --global merge.tool vimdiff
 
 	
-	LISTE GLOBALE
+# LISTE GLOBALE
 
 git config --list
 
 
-	STATUT DES FICHIERS
+# STATUT DES FICHIERS
 
 git status
 
 
-	LISTER LES BRANCH
+# LISTER LES BRANCH
 
 git branch -a (on au '*' sur la branche courante.)
 
 	
-	CRÉER UNE BRANCH
+# CRÉER UNE BRANCH
 	
-# Deux lignes: créer et basculer sur la nouvelle branch
+	Deux lignes: créer et basculer sur la nouvelle branch
+
 git branch nom_de_ma_branch_nouvelle
 
 git checkout nom_de_ma_branch_nouvelle
 
-# Une seule ligne: créer et basculer
+	Une seule ligne: créer et basculer
+
 git checkout -b nom_de_ma_branch_nouvelle
 
 
 	SUPPRIMER UNE BRANCH
 	
-# Si la branch est local et n'est pas créée sur le repo distant
+	Si la branch est local et n'est pas créée sur le repo distant
+
 git branch -d nom_de_ma_branch_local
 
-# Si la branch est présente sur le repo distant
+	Si la branch est présente sur le repo distant
+
 git push origin --delete nom_de_ma_branch_distante
 
 	
-	CHANGER DE BRANCH
+# CHANGER DE BRANCH
 	
 git checkout nom_de_ma_branch
 
 
-	FAIRE UN COMMIT
+# FAIRE UN COMMIT
 
 git add . (pour commiter tous les fichiers)
 
@@ -144,51 +149,51 @@ git add nom_du_fichier_à_commiter (pour commiter un fichier spécifique)
 git commit -m "Voici ma modification sur le fichier"
 
 
-	ANNULER LE DERNIER COMMIT ET MODIFSICATIONS
+# ANNULER LE DERNIER COMMIT ET MODIFSICATIONS
 
 git reset --hard mon_dernier_commit
 
 git push --force
 
 
-	ANTIDATER UN COMMIT.
+# ANTIDATER UN COMMIT.
 
 git add .
 
 GIT_AUTHOR_DATE="2020-06-1 08:32 +100" git commit -m "Commit antidaté"
 
 
-	METTRE À JOUR LE DÉPÔT LOCAL
+# METTRE À JOUR LE DÉPÔT LOCAL
 
 git pull
 
 
-	METTRE À JOUR LE DÉPÔT LOCAL D'UNE BRANCH SPÉCIFIQUE
+# METTRE À JOUR LE DÉPÔT LOCAL D'UNE BRANCH SPÉCIFIQUE
 
 git pull origin ma_branch_cible
 
 
-	ENVOYER SES COMMITS VERS LE DÉPÔT DISTANT
+# ENVOYER SES COMMITS VERS LE DÉPÔT DISTANT
 
 git push
 
 
-	ENVOYER SES COMMIT VERS LE DÉPÔT DISTANT SUR UNE BRANCH SPÉCIFIQUE
+# ENVOYER SES COMMIT VERS LE DÉPÔT DISTANT SUR UNE BRANCH SPÉCIFIQUE
 
 git push origin ma_branch_spécifique
 
 
-	SUPPRIMER UN FICHIER DU RÉPERTOIRE DE TRAVAIL ET DE L'INDEX
+# SUPPRIMER UN FICHIER DU RÉPERTOIRE DE TRAVAIL ET DE L'INDEX
 
 git rm nom_du_fichier
 
 
-	SUPPRIMER UN FICHIER DE L'INDEX
+# SUPPRIMER UN FICHIER DE L'INDEX
 
 git rmg --cached nom_du_fichier
 
 
-	VERSION DE GIT
+# VERSION DE GIT
 	
 git --version
 
