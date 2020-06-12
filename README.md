@@ -72,12 +72,6 @@ La page d'accueil de glpi doit alors s'ouvrir.
 
 ---
 
-	LANGAGE UTILISÉ
-
-- Python3
-
----
-
 ### PyBreakDown
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
@@ -94,12 +88,6 @@ Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été
     9 : Erreur décompression fusioninventory
     10 : Erreur déplacement fusioninventory
     11 : Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi
-
----
-
-### VERSION DE GIT
-
-git version 2.27.0.windows.1
 
 ---
 
@@ -167,7 +155,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
 - [Git](https://git-scm.com/download/win)	
 - [GitHub](https://github.com/)
-- [Git Clone](https://github.com/oupasbenith/Projet6.git)
+- [Git Clone](https://github.com/oupasbenith/MyProject.git)
 
 ---
 
@@ -183,6 +171,18 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 ### CONTRIBUTEURS
 
 - D. GOMIS <yes@darillbenith.ca>
+
+---
+
+### VERSION DE GIT
+
+- Git version 2.27.0.windows.1
+
+---
+
+### LANGAGE UTILISÉ
+
+- Python3
 
 ---
 
