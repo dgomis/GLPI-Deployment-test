@@ -3,13 +3,48 @@
 
 				AUTOMATISER L'INSTALLATION DE GLPI AVEC PYTHON
 
-Pour ce projet, j'ai créé un script permettant d’automatiser des tâches d’administration. 
+Pour ce projet, j'ai créé un script permettant d’automatiser des tâches d’administration de GLPI. 
 
-## SCRIPT PYTHON ET YAML
+## SCRIPT PYTHON
 
-Ce script personnalisé de python fait appel au script yaml sur lequel sont stockées les commandes d'installation. 
+Ce script personnalisé de python fait appel au script yaml sur lequel sont stockées les commandes d'installation dans des variables. 
 
-Concernant les téléchargements, voir les liens ci-dessous.
+1. Dans la première partie du script, j'ai défini une fonction nommée "lecture_yaml" pour appeler le script yaml, le lire, afficher et exécuter son contenu.
+
+Ensuite, à tour de rôle, le script execute les variables suivantes depuis yaml:
+-mise_a_jour : Mise à jour de la liste des paquets et les paquets eux-même 
+-install_apache2 : Installation de Apache2
+-enable_apache2 : Activation de Apache2 : 
+-start_apache2 : Redémarrage de Apache2 
+-install_php7 : Installation de PHP avec les modules complémentaires pour le bon fonctionnement de GLPI 
+-install_mariadb : Installation de MariaDB
+2. Dans la deuxième partie, le script va créer l’utilisateur et la base de donnée qui nous permettra d’installer GLPI.
+3. Dans la troisième partie, le script crée le répertoire /tmp/Downloads pour accueillir tous nos téléchargements.
+4. Le script donne des droits d’accès sur le répertoire /Downloads
+5. Le Script va récupérer les paquets GLPI sur le serveur miroir pour les stocker directement dans le nouveau répertoire /Downloads précédemment créé et nous affiche la localisation de ce répertoire et des entêtes.
+6. Le script va ouvrir le répertoire de stockage de ces paquets pour les y décompresser,  
+7. Une fois ces derniers décompressés, le script les déplace dans le répertoire /var/www/html
+8. Le script va créer la base de donnée et le compte dans la console. 
+9. Le script va télécharger le plugin FusionInventory sur le serveur miroir et le stocke dans le répertoire /Downloads et affiche la localisation du répertoire et des entêtes.
+10. Le script décompresse les paquets téléchargés dans le répertoire /var/www/html/glpi/plugins,
+11. A partir de ce dernier, le script déplace les paquets décompressés dans le répertoire /FusionInventory 
+12. Pour cette dernière partie, le script attribue les droits au serveur LAMP pour agir sur les fichiers du répertoire GLPI ainsi que les droits d'accès au serveur web sur le répertoire des plugins.
+
+---
+
+## SCRIPT YAML
+
+Ce script yaml sert à lister les paquets nécessaires à la mise à jour du serveur et à l'installation de GLPI.
+
+Les variables contenues dans ce scripte stockent nos commandes.
+
+Il est fait de sorte que toutes les modifications futures (changement de version, user, mdp,..) ne se 
+feront que sur lui même et pas sur le script python.
+
+---
+
+	Concernant les téléchargements, voir les liens ci-dessous. 
+
 
 	PRÉ-REQUIS
 
@@ -39,7 +74,7 @@ La page d'accueil de glpi doit alors s'ouvrir.
 
 - Python3
 
-## pyBreakDown
+## PyBreakDown
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
@@ -58,13 +93,13 @@ Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été
 
 ---
 
-# VERSION DE GIT
+### VERSION DE GIT
 
 git version 2.27.0.windows.1
 
 ---
 
-## CARACTÉRISTIQUES DE GLPI:
+### CARACTÉRISTIQUES DE GLPI:
 
 - Inventaire des ordinateurs, des périphériques, des imprimantes réseau et de tous les composants 
 associés via une interface, avec des outils d'inventaire tels que: FusionInventory ou OCS Inventory    
@@ -116,7 +151,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ---
 
-## TÉLÉCHARGEMENT
+### TÉLÉCHARGEMENT
 
 - [Glpi](https://github.com/glpi-project/glpi/releases/download/9.4.5/glpi-9.4.5.tgz)
 - [FusionInventory](https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.4+2.4.tar.gz)
@@ -126,11 +161,11 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ---
 
-## INSTALLATION 
+### INSTALLATION 
 
 
 
-## DOCUMENTATION
+### DOCUMENTATION
 
 - [Openclassrooms](https://openclassrooms.com/fr)
 - [Licence open-source](https://choosealicense.com/)
@@ -139,13 +174,13 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ---
 
-## CONTRIBUTEURS
+### CONTRIBUTEURS
 
 - D. GOMIS <yes@darillbenith.ca>
 
 ---
 
-## LICENSE & COPYRIGHT
+### LICENSE & COPYRIGHT
 
 D. GOMIS, étudiant Openclassrooms
 
