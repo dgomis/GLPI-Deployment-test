@@ -58,38 +58,41 @@ Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été
 
 ---
 
-										## COMMANDES GIT
+## COMMANDES GIT
 
 	INITIALISATION DE GIT
 
 # Identité
-$ git config --global user.name "mon_nom"
+git config --global user.name "mon_nom"
 
 # Adresse mail
-$ git config --global user.email "mon_email@open-source.fr"
+git config --global user.email "mon_email@open-source.fr"
 
 # Outil de l'éditeur
-$ git config --global core.editor subl
+git config --global core.editor subl
 
 # Diffusion de l'outil
-$ git config --global merge.tool filemerge
+git config --global merge.tool filemerge
 
 
 	CLONER LE DÉPÔT EN LOCAL
 	
-$ git clone https://github.com/oupasbenith/MyProject.git
+git clone https://github.com/oupasbenith/MyProject.git
 
 	
 	ACTIVATION DES COULEURS
 	
-$ git config --global color.diff auto
-$ git config --global color.status auto
-$ git config --global color.branch auto
+git config --global color.diff auto
+
+git config --global color.status auto
+
+git config --global color.branch auto
 
 	CHANGER L'ÉDITEUR
 
-$ git config --global core.editor notepad++
-$ git config --global merge.tool vimdiff
+git config --global core.editor notepad++
+
+git config --global merge.tool vimdiff
 
 	
 	LISTE GLOBALE
@@ -104,85 +107,91 @@ git status
 
 	LISTER LES BRANCH
 
-$ git branch -a (on au '*' sur la branche courante.)
+git branch -a (on au '*' sur la branche courante.)
 
 	
 	CRÉER UNE BRANCH
 	
 # Deux lignes: créer et basculer sur la nouvelle branch
-$ git branch nom_de_ma_branch_nouvelle
-$ git checkout nom_de_ma_branch_nouvelle
+git branch nom_de_ma_branch_nouvelle
+
+git checkout nom_de_ma_branch_nouvelle
 
 # Une seule ligne: créer et basculer
-$ git checkout -b nom_de_ma_branch_nouvelle
+git checkout -b nom_de_ma_branch_nouvelle
 
 
 	SUPPRIMER UNE BRANCH
 	
 # Si la branch est local et n'est pas créée sur le repo distant
-$ git branch -d nom_de_ma_branch_local
+git branch -d nom_de_ma_branch_local
 
 # Si la branch est présente sur le repo distant
-$ git push origin --delete nom_de_ma_branch_distante
+git push origin --delete nom_de_ma_branch_distante
 
 	
 	CHANGER DE BRANCH
 	
-$ git checkout nom_de_ma_branch
+git checkout nom_de_ma_branch
 
 
 	FAIRE UN COMMIT
 
-$ git add . (pour commiter tous les fichiers)
-$ git add nom_du_fichier_à_commiter (pour commiter un fichier spécifique)
-$ git commit -m "Voici ma modification sur le fichier"
+git add . (pour commiter tous les fichiers)
+
+git add nom_du_fichier_à_commiter (pour commiter un fichier spécifique)
+
+git commit -m "Voici ma modification sur le fichier"
 
 
 	ANNULER LE DERNIER COMMIT ET MODIFSICATIONS
 
-$ git reset --hard mon_dernier_commit
-$ git push --force
+git reset --hard mon_dernier_commit
+
+git push --force
 
 
 	ANTIDATER UN COMMIT.
 
-$ git add .
+git add .
+
 GIT_AUTHOR_DATE="2020-06-1 08:32 +100" git commit -m "Commit antidaté"
 
 
 	METTRE À JOUR LE DÉPÔT LOCAL
 
-$ git pull
+git pull
 
 
 	METTRE À JOUR LE DÉPÔT LOCAL D'UNE BRANCH SPÉCIFIQUE
 
-$ git pull origin ma_branch_cible
+git pull origin ma_branch_cible
 
 
 	ENVOYER SES COMMITS VERS LE DÉPÔT DISTANT
 
-$ git push
+git push
 
 
 	ENVOYER SES COMMIT VERS LE DÉPÔT DISTANT SUR UNE BRANCH SPÉCIFIQUE
 
-$ git push origin ma_branch_spécifique
+git push origin ma_branch_spécifique
 
 
 	SUPPRIMER UN FICHIER DU RÉPERTOIRE DE TRAVAIL ET DE L'INDEX
 
-$ git rm nom_du_fichier
+git rm nom_du_fichier
 
 
 	SUPPRIMER UN FICHIER DE L'INDEX
 
-$ git rmg --cached nom_du_fichier
+git rmg --cached nom_du_fichier
 
 
 	VERSION DE GIT
 	
-$ git --version
+git --version
+
 git version 2.27.0.windows.1
 
 ---
@@ -202,7 +211,7 @@ associés via une interface, avec des outils d'inventaire tels que: FusionInvent
 
 De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalités supplémentaires.
 
-* LES VERSIONS REQUISES POUR L'INSTALLATION DE GLPI
+	LES VERSIONS REQUISES POUR L'INSTALLATION DE GLPI
 
 	GLPI est une application web qui nécessite :
 
@@ -210,7 +219,7 @@ De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalit�
 - Le serveur web devra supporter PHP (version: PHP 7.3.14-1);
 - Pour la base de données (MariaDB --> version: 10.3.22-MariaDB).
 
-* EXTENSIONS PHP OBLIGATOIRES:
+	EXTENSIONS PHP OBLIGATOIRES:
 
 Les extensions PHP suivantes sont requises pour que l’application fonctionne correctement :
 
@@ -225,7 +234,7 @@ Les extensions PHP suivantes sont requises pour que l’application fonctionne c
 - simplexml;
 - xml.
 
-* EXTENSIONS PHP OPTIONNELLES
+	EXTENSIONS PHP OPTIONNELLES
 
 Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de GLPI :
 
