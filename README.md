@@ -5,19 +5,20 @@
 
 Pour ce projet, j'ai créé un script permettant d’automatiser des tâches d’administration de GLPI. 
 
-## SCRIPT PYTHON
+### SCRIPT PYTHON
 
 Ce script personnalisé de python fait appel au script yaml sur lequel sont stockées les commandes d'installation dans des variables. 
 
 1. Dans la première partie du script, j'ai défini une fonction nommée "lecture_yaml" pour appeler le script yaml, le lire, afficher et exécuter son contenu.
 
 Ensuite, à tour de rôle, le script execute les variables suivantes depuis yaml:
--mise_a_jour : Mise à jour de la liste des paquets et les paquets eux-même 
--install_apache2 : Installation de Apache2
--enable_apache2 : Activation de Apache2 : 
--start_apache2 : Redémarrage de Apache2 
--install_php7 : Installation de PHP avec les modules complémentaires pour le bon fonctionnement de GLPI 
--install_mariadb : Installation de MariaDB
+
+- mise_a_jour : Mise à jour de la liste des paquets et les paquets eux-même 
+- install_apache2 : Installation de Apache2
+- enable_apache2 : Activation de Apache2 : 
+- start_apache2 : Redémarrage de Apache2 
+- install_php7 : Installation de PHP avec les modules complémentaires pour le bon fonctionnement de GLPI 
+- install_mariadb : Installation de MariaDB
 2. Dans la deuxième partie, le script va créer l’utilisateur et la base de donnée qui nous permettra d’installer GLPI.
 3. Dans la troisième partie, le script crée le répertoire /tmp/Downloads pour accueillir tous nos téléchargements.
 4. Le script donne des droits d’accès sur le répertoire /Downloads
@@ -32,7 +33,7 @@ Ensuite, à tour de rôle, le script execute les variables suivantes depuis yaml
 
 ---
 
-## SCRIPT YAML
+### SCRIPT YAML
 
 Ce script yaml sert à lister les paquets nécessaires à la mise à jour du serveur et à l'installation de GLPI.
 
@@ -43,10 +44,7 @@ feront que sur lui même et pas sur le script python.
 
 ---
 
-	Concernant les téléchargements, voir les liens ci-dessous. 
-
-
-	PRÉ-REQUIS
+### PRÉ-REQUIS
 
 1. Python version 3 ou supérieur: apt install python3
 2. Pip3 version 19.2.1 ou supérieur: apt install python3-pip pip3 install --upgrade pip
@@ -57,7 +55,9 @@ feront que sur lui même et pas sur le script python.
 
 Ces pré-requis sont nécessaires à l'exécution du script
 
-	EXÉCUTION DU SCRIPT PYTHON
+---
+
+### EXÉCUTION DU SCRIPT PYTHON
 
 Pour lancer l'exécution du script, il faut exécuter en root la commande suivante: 
 
@@ -70,11 +70,15 @@ et taper dans la barre d’adresse l'IP de votre machine, suivie de /glpi comme 
 
 La page d'accueil de glpi doit alors s'ouvrir.
 
+---
+
 	LANGAGE UTILISÉ
 
 - Python3
 
-## PyBreakDown
+---
+
+### PyBreakDown
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
@@ -114,7 +118,9 @@ associés via une interface, avec des outils d'inventaire tels que: FusionInvent
 
 De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalités supplémentaires.
 
-	LES VERSIONS REQUISES POUR L'INSTALLATION DE GLPI
+---
+
+### LES VERSIONS REQUISES POUR L'INSTALLATION DE GLPI
 
 	GLPI est une application web qui nécessite :
 
@@ -122,7 +128,9 @@ De plus, GLPI prend en charge de nombreux plugins qui offrent des fonctionnalit�
 - Le serveur web devra supporter PHP (version: PHP 7.3.14-1);
 - Pour la base de données (MariaDB --> version: 10.3.22-MariaDB).
 
-	EXTENSIONS PHP OBLIGATOIRES:
+---
+
+### EXTENSIONS PHP OBLIGATOIRES:
 
 Les extensions PHP suivantes sont requises pour que l’application fonctionne correctement :
 
@@ -137,7 +145,9 @@ Les extensions PHP suivantes sont requises pour que l’application fonctionne c
 - simplexml;
 - xml.
 
-	EXTENSIONS PHP OPTIONNELLES
+---
+
+### EXTENSIONS PHP OPTIONNELLES
 
 Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de GLPI :
 
@@ -160,10 +170,6 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [Git Clone](https://github.com/oupasbenith/Projet6.git)
 
 ---
-
-### INSTALLATION 
-
-
 
 ### DOCUMENTATION
 
