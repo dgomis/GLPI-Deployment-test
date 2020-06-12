@@ -46,9 +46,10 @@ La page d'accueil de glpi doit alors s'ouvrir.
 
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
-    1 : Erreur de lecture du fichier YAML
-    2 : Erreur lors de la mise à jour de la gestion des paquets
-	3 : Erreur lors de la création de la bd
+    0 : Erreur de lecture du fichier YAML
+	1 : Quelque chose s'est mal passé
+    2 : Erreur de création du répertoire Downloads
+	3 : Erreur d'attribution des droits sur tmp
     4 : Erreur de téléchargement glpi
     5 : Erreur décompression glpi
     6 : Erreur déplacement glpi
@@ -261,6 +262,10 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 - [Git Clone](https://github.com/oupasbenith/Projet6.git)
 
 ---
+
+## INSTALLATION 
+
+
 
 ## DOCUMENTATION
 
