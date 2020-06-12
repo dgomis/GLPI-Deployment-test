@@ -23,11 +23,10 @@ os.system(data["install_php7"])
 os.system(data["install_mariadb"])
 
 # Créationde la base de donnée et tilisateur
-print("***Utilisation de mysql.connector***")
+print("*** Début création de la base de donnée et utilisateur ***")
 create_user_req = 'mysql -e "CREATE USER "' + data["db_user"] + '"@"localhost" IDENTIFIED BY \'' + data["db_userPwd"] + '\'"'
 create_db_req = 'mysql -e "CREATE DATABASE '+ data["db_name"] + '"'
 priv_req = 'mysql -e "GRANT ALL PRIVILEGES ON *.* TO "' + data["db_user"] + '"@"localhost" IDENTIFIED BY \'' + data["db_userPwd"] + '\'"'
-
 try:
     os.system(create_user_req)
     os.system(create_db_req)
@@ -37,10 +36,10 @@ except Exception as r:
     exit(1)
 else:
     print("*** Base de donnée et user créés avec succès ***")	
-conn.close()
 print("*** Connexion mysql close ***")
 
 # Création du repertoire Downloads pour les téléchargements.
+print("*** Début de la création du dossier Downloads ***")
 try:
     os.chdir('/tmp/')
     os.system(data["rep_create"])
@@ -48,7 +47,7 @@ except Exception as z:
     print(f"***Erreur de création du répertoire Downloads : {z} !***")
     sys.exit(3)
 else:
-    print("*** Le dossier Downloads a été créé ***")
+    print("*** Le dossier Downloads a été créé avec succès ***")
 
 #Attribution des droits sur le répertoire /tmp/Downloads
 print("*** Attribution des droits sur le répertoire temporaire ***")
@@ -58,10 +57,10 @@ except Exception as g:
     print("*** Erreur d'attribution des droits sur tmp : {g} ***")
     sys.exit(4)
 else:
-    print("*** Droits accordés sur tmp ***")
+    print("*** Droits accordés sur le dossier Downloads avec succès ***")
 
 # Téléchargement de GLPI)
-print("*** Début téléchargement glpi ***")
+print("*** Début du téléchargement de glpi ***")
 try:
     url = data['url_glpi']
     filename, headers = urllib.request.urlretrieve(data['url_glpi'], filename = data["working_folder"] + data["glpi_archive"])
@@ -69,7 +68,7 @@ except Exception as e:
     print(f"*** Erreur de téléchargement glpi : {e} ***")
     sys.exit(5)
 else:
-    print("*** GLPI téléchargé ***")
+    print("*** GLPI téléchargé avec succès ***")
 print("*** Localisation des fichiers: ", filename)
 print("*** Localisation des entêtes: ", headers)
 
@@ -82,7 +81,7 @@ except:
     print("*** Erreur de décompression de glpi ***")
     sys.exit(6)
 else:
-    print("*** Décompression glpi terminée ***")
+    print("*** La décompression glpi est terminée avec succès ***")
 my_tar1.close()
 
 # Déplacement de glpi dans le répertoire /html
@@ -105,7 +104,7 @@ except:
     print("*** Erreur de création du compte et de la base de donnée dans la console ***")
     sys.exit(8)
 else:
-    print("*** Compte et base de donnée créés dans la console ***")
+    print("*** Compte et base de donnée créés dans la console avec succès ***")
 
 # Téléchargement de fusioninventory
 print("*** Début téléchargement fusioninventory ! ***")
