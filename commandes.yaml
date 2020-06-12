@@ -38,6 +38,11 @@ url_fusinv: "https://github.com/fusioninventory/fusioninventory-for-glpi/archive
 
 fusinv_archive: "glpi9.4+2.4.tar.gz"
 
-fusinv_folder: "glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/"
+fusinv_folder: "/var/www/html/glpi/plugins/fusioninventory-for-glpi-glpi9.4-2.4/"
 
-fusinv_working_folder: "glpi/plugins/fusioninventory/"
+fusinv_working_folder: "fusioninventory/"
+
+droit_glpi: "/var/www/html/glpi/"
+
+droit_plugins: "/var/www/html/glpi/plugins"
+
