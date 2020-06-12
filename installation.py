@@ -10,7 +10,7 @@ def lecture_yaml(glpi):
         try:
             return yaml.safe_load(f)
         except yaml.YAMLError as ErrLectGlpi:
-            print(ErrLectGlpi)
+            print(f"*** Impossible de lire le fichier yaml : {ErrLectGlpi} ***")
 
 if __name__ == "__main__":
     data = lecture_yaml(glpi)
@@ -72,7 +72,7 @@ else:
 print("*** Début téléchargement glpi ***")
 try:
     url = data["url_glpi"]
-    filename, headers = urllib.request.urlretrieve(url, filename = data["working_folder"]) + data["glpi_archive"])
+    filename, headers = urllib.request.urlretrieve(url, filename = data["working_folder"] + data["glpi_archive"])
 except Exception as e:
     print(f"*** Erreur de téléchargement glpi : {e} ***")
     sys.exit(4)
@@ -132,7 +132,7 @@ print("*** Localisation des entêtes: ", headers)
 print("*** Début décompression fusioninventory ***")
 try:
     my_tar2 = tarfile.open(data["working_folder"] + data["fusinv_archive"])
-    my_tar2.extractall(data["working_folder"])
+    my_tar2.extractall(data["webroot"])
 except Exception as m:
     print(f"*** Erreur décompression fusioninventory : {m} ***")
     sys.exit(9)
@@ -153,13 +153,12 @@ else:
 # Droits LAMP sur les fichiers glpi
 print("*** Début attribution des droits au serveur LAMP sur les fichiers de glpi ***")
 try:
-    os.system('chown –R www-data '+ data["webroot"] ' + 'data["glpi_folder"]'')
+    os.system('chown –R www-data' + data["droit_glpi"] + data["droit_plugins"])
 except Exception as w:
-    print("*** Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi ***")
+    print(f"*** Erreur d'attribution des droits au serveur LAMP sur les fichiers de glpi {w} ***")
     sys.exit(11)
 else:
-    print(f"** Droits attribués au serveur LAMP pour agir sur les fichiers de glpi : {w} **")
+    print("** Droits attribués au serveur LAMP pour agir sur les fichiers de glpi **")
 
-glpi.close()
 print("*** INSTALLATION GLPI TERMINEE...!!! ***")
 
