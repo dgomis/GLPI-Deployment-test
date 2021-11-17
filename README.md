@@ -77,7 +77,7 @@ La page d'accueil de glpi doit alors s'ouvrir.
 Afin de stopper le script en cas de rencontre d'erreurs, des breakdown ont été mis en place :
 
     0 : Erreur de lecture du fichier YAML
-	1 : Quelque chose s'est mal passé
+	1 : Quelque chose s'est mal passée
     2 : Erreur de création du répertoire Downloads
 	3 : Erreur d'attribution des droits sur tmp
     4 : Erreur de téléchargement glpi
@@ -170,7 +170,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ### CONTRIBUTEURS
 
-- D. GOMIS <yes@darillbenith.ca>
+- D. GOMIS <yes@benitche.ca>
 
 ---
 
@@ -188,7 +188,7 @@ Les extensions PHP suivantes sont requises pour des fonctionnalités annexes de 
 
 ### LICENSE & COPYRIGHT
 
-D. GOMIS, étudiant Openclassrooms
+D. GOMIS, Benitche entreprise
 
 Ce projet est sous [MIT License](LICENCE).
 
